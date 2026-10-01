@@ -24,19 +24,63 @@
 
 ## 💡 Problem vs. Solution
 
-```mermaid
-mindmap
-  root((🏥 Readmission<br/>Predictor))
-    ❌ Current Bottlenecks
-      [High 30-Day Readmissions undetected at discharge]
-      [Black-box ML predictions without clinical explanation]
-      [Siloed data leaving analysts without population trends]
-    ✅ Intelligent Solution
-      (Flask App with real-time intake scoring)
-      (SHAP Values breaking down top clinical biomarkers)
-      (Interactive Plotly charts comparing 'What-If' treatments)
-      (Balanced classification using SMOTE)
-```
+<div align="center">
+
+<table>
+<tr>
+
+<td width="48%" align="center" bgcolor="#EAF4FF">
+
+<h3>❌ CURRENT PROBLEMS</h3>
+
+<br>
+
+🔴 <b>Undetected 30-Day Readmission Risk</b><br>
+Patient readmission risk may remain unnoticed at discharge.
+
+<br><br>
+
+🔴 <b>Black-Box Predictions</b><br>
+Risk predictions can lack clear explanations of contributing factors.
+
+<br><br>
+
+🔴 <b>Siloed Healthcare Data</b><br>
+Limited visibility into population-level trends and patterns.
+
+</td>
+
+<td width="4%" align="center">
+
+➡️
+
+</td>
+
+<td width="48%" align="center" bgcolor="#E8FAF4">
+
+<h3>✅ OUR SOLUTION</h3>
+
+<br>
+
+🟢 <b>Risk Scoring</b><br>
+Analyze patient data to identify readmission risk.
+
+<br><br>
+
+🟢 <b>Explainable Insights</b><br>
+Highlight important factors contributing to patient risk.
+
+<br><br>
+
+🟢 <b>Interactive Analytics</b><br>
+Visualize population trends, diagnosis patterns and outcomes.
+
+</td>
+
+</tr>
+</table>
+
+</div>
 
 ---
 
