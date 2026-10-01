@@ -17,45 +17,7 @@
     <img src="https://img.shields.io/badge/LEAD-NANDANI%20KUMARI-05668D?style=for-the-badge" />
   </p>
 
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.10+-102A45?style=flat-square&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/Framework-Flask-00A896?style=flat-square&logo=flask&logoColor=white" />
-    <img src="https://img.shields.io/badge/ML-scikit--learn-007ACC?style=flat-square&logo=scikit-learn&logoColor=white" />
-    <img src="https://img.shields.io/badge/Explainability-SHAP-02C39A?style=flat-square" />
-    <img src="https://img.shields.io/badge/Dashboards-Plotly-00E5BE?style=flat-square&logo=plotly&logoColor=black" />
-  </p>
-
-</div>
-
----
-
-## 🌟 Clinical Key Metrics at a Glance
-
-<div align="center">
-<table>
-  <tr>
-    <td align="center" width="25%" style="background:#0f172a; border-radius:12px; padding:12px;">
-      <font color="#38bdf8" size="2"><b>TOTAL ANALYZED RECORDS</b></font><br/>
-      <font color="#00f2fe" size="6"><b>69,975+</b></font><br/>
-      <font color="#94a3b8" size="2">UCI 130-US Hospitals</font>
-    </td>
-    <td align="center" width="25%" style="background:#0f172a; border-radius:12px; padding:12px;">
-      <font color="#f43f5e" size="2"><b>LEADING DIAGNOSIS</b></font><br/>
-      <font color="#fb7185" size="5"><b>Circulatory</b></font><br/>
-      <font color="#94a3b8" size="2">30.4% Primary Encounter</font>
-    </td>
-    <td align="center" width="25%" style="background:#0f172a; border-radius:12px; padding:12px;">
-      <font color="#4ade80" size="2"><b>AVG HOSPITAL STAY</b></font><br/>
-      <font color="#22c55e" size="6"><b>4.27</b></font> <font color="#86efac">Days</font><br/>
-      <font color="#94a3b8" size="2">Risk Stratification Metric</font>
-    </td>
-    <td align="center" width="25%" style="background:#0f172a; border-radius:12px; padding:12px;">
-      <font color="#c084fc" size="2"><b>MODEL EXPLAINABILITY</b></font><br/>
-      <font color="#a855f7" size="5"><b>SHAP XAI</b></font><br/>
-      <font color="#94a3b8" size="2">Transparent Risk Drivers</font>
-    </td>
-  </tr>
-</table>
+   
 </div>
 
 ---
