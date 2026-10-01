@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Patient Entry | Health Intelligence</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Inter,
+        Arial,
+        sans-serif;
+
+    background:
+        #030706;
+
+    color: white;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+}
+
+
+.header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.title {
+
+    font-size: 32px;
+
+    font-weight: 800;
+
+}
+
+
+.title span {
+
+    color:
+        #20e6a0;
+
+}
+
+
+.subtitle {
+
+    color:
+        #84938e;
+
+    margin-top: 7px;
+
+}
+
+
+.back {
+
+    text-decoration: none;
+
+    color:
+        #20e6a0;
+
+}
+
+
+.card {
+
+    background:
+        #07100e;
+
+    border:
+        1px solid
+        rgba(32,230,160,.22);
+
+    border-radius:
+        18px;
+
+    padding:
+        28px;
+
+    margin-bottom:
+        22px;
+
+}
+
+
+.section-title {
+
+    color:
+        #20e6a0;
+
+    font-size:
+        18px;
+
+    font-weight:
+        700;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.mode {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        15px;
+
+}
+
+
+.mode label {
+
+    border:
+        1px solid
+        #23453c;
+
+    padding:
+        20px;
+
+    border-radius:
+        14px;
+
+    cursor:
+        pointer;
+
+    background:
+        #081411;
+
+}
+
+
+.mode label:hover {
+
+    border-color:
+        #20e6a0;
+
+}
+
+
+.mode input {
+
+    accent-color:
+        #20e6a0;
+
+}
+
+
+.grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        18px;
+
+}
+
+
+.field {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        8px;
+
+}
+
+
+.field label {
+
+    font-size:
+        13px;
+
+    color:
+        #a8b5b0;
+
+}
+
+
+.field input,
+.field select {
+
+    width: 100%;
+
+    padding:
+        13px;
+
+    border-radius:
+        10px;
+
+    border:
+        1px solid
+        #29443d;
+
+    background:
+        #020605;
+
+    color:
+        white;
+
+    outline:
+        none;
+
+}
+
+
+.field input:focus,
+.field select:focus {
+
+    border-color:
+        #20e6a0;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(32,230,160,.08);
+
+}
+
+
+.button {
+
+    width: 100%;
+
+    padding:
+        16px;
+
+    border:
+        none;
+
+    border-radius:
+        12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #20e6a0,
+            #00b879
+        );
+
+    color:
+        #00130c;
+
+    font-size:
+        16px;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+}
+
+
+.button:hover {
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(32,230,160,.15);
+
+}
+
+
+.upload {
+
+    border:
+        1px dashed
+        #2c6657;
+
+    padding:
+        25px;
+
+    border-radius:
+        14px;
+
+}
+
+
+.upload input {
+
+    margin-top:
+        12px;
+
+}
+
+
+@media(max-width:800px) {
+
+    .grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .mode {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <div>
+
+            <div class="title">
+                Patient <span>Entry</span>
+            </div>
+
+            <div class="subtitle">
+                Add patient information to the health intelligence dashboard
+            </div>
+
+        </div>
+
+        <a
+            class="back"
+            href="/"
+        >
+            ← Dashboard
+        </a>
+
+    </div>
+
+
+    <!-- ==================================================
+         DATA MODE
+    ================================================== -->
+
+    <div class="card">
+
+        <div class="section-title">
+            01 · Dataset Mode
+        </div>
+
+        <div class="mode">
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="mode_preview"
+                    checked
+                    onclick="setMode('append')"
+                >
+
+                <strong>
+                    Add to Existing Data
+                </strong>
+
+                <br>
+
+                <small>
+                    Keep previous patients and add this patient.
+                </small>
+
+            </label>
+
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="mode_preview"
+                    onclick="setMode('new')"
+                >
+
+                <strong>
+                    Start New Dataset
+                </strong>
+
+                <br>
+
+                <small>
+                    Remove previous records and start fresh.
+                </small>
+
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         CSV UPLOAD
+    ================================================== -->
+
+    <div class="card">
+
+        <div class="section-title">
+            02 · Upload Dataset
+        </div>
+
+        <form
+            action="/upload"
+            method="POST"
+            enctype="multipart/form-data"
+            class="upload"
+        >
+
+            <label>
+                Upload your patient CSV
+            </label>
+
+            <br>
+
+            <input
+                type="file"
+                name="file"
+                accept=".csv"
+                required
+            >
+
+            <br><br>
+
+            <button
+                class="button"
+                type="submit"
+            >
+                Upload & Analyze CSV
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- ==================================================
+         MANUAL PATIENT ENTRY
+    ================================================== -->
+
+    <form
+        action="/add-patient"
+        method="POST"
+    >
+
+        <input
+            type="hidden"
+            name="data_mode"
+            id="data_mode"
+            value="append"
+        >
+
+
+        <!-- DEMOGRAPHICS -->
+
+        <div class="card">
+
+            <div class="section-title">
+                03 · Patient Demographics
+            </div>
+
+            <div class="grid">
+
+                <div class="field">
+
+                    <label>
+                        Race
+                    </label>
+
+                    <select name="race">
+
+                        <option>Caucasian</option>
+                        <option>AfricanAmerican</option>
+                        <option>Hispanic</option>
+                        <option>Asian</option>
+                        <option>Other</option>
+                        <option>Unknown</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Gender
+                    </label>
+
+                    <select name="gender">
+
+                        <option>Female</option>
+                        <option>Male</option>
+                        <option>Unknown/Invalid</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Age Group
+                    </label>
+
+                    <select name="age">
+
+                        <option>[0-10)</option>
+                        <option>[10-20)</option>
+                        <option>[20-30)</option>
+                        <option>[30-40)</option>
+                        <option>[40-50)</option>
+                        <option>[50-60)</option>
+                        <option>[60-70)</option>
+                        <option>[70-80)</option>
+                        <option>[80-90)</option>
+                        <option>[90-100)</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HOSPITAL -->
+
+        <div class="card">
+
+            <div class="section-title">
+                04 · Hospital Admission
+            </div>
+
+            <div class="grid">
+
+                <div class="field">
+
+                    <label>
+                        Admission Type ID
+                    </label>
+
+                    <select name="admission_type_id">
+
+                        <option value="1">
+                            1 — Emergency
+                        </option>
+
+                        <option value="2">
+                            2 — Urgent
+                        </option>
+
+                        <option value="3">
+                            3 — Elective
+                        </option>
+
+                        <option value="4">
+                            4 — Newborn
+                        </option>
+
+                        <option value="5">
+                            5 — Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Admission Source ID
+                    </label>
+
+                    <select name="admission_source_id">
+
+                        <option value="1">
+                            Physician Referral
+                        </option>
+
+                        <option value="2">
+                            Clinic
+                        </option>
+
+                        <option value="4">
+                            Transfer
+                        </option>
+
+                        <option value="7">
+                            Emergency Room
+                        </option>
+
+                        <option value="8">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Discharge Disposition ID
+                    </label>
+
+                    <input
+                        type="number"
+                        name="discharge_disposition_id"
+                        value="1"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- UTILIZATION -->
+
+        <div class="card">
+
+            <div class="section-title">
+                05 · Hospital Utilization
+            </div>
+
+            <div class="grid">
+
+                <div class="field">
+
+                    <label>
+                        Time in Hospital
+                    </label>
+
+                    <input
+                        type="number"
+                        name="time_in_hospital"
+                        min="1"
+                        max="100"
+                        value="1"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Number of Lab Procedures
+                    </label>
+
+                    <input
+                        type="number"
+                        name="num_lab_procedures"
+                        min="0"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Number of Procedures
+                    </label>
+
+                    <input
+                        type="number"
+                        name="num_procedures"
+                        min="0"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Number of Medications
+                    </label>
+
+                    <input
+                        type="number"
+                        name="num_medications"
+                        min="0"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Outpatient Visits
+                    </label>
+
+                    <input
+                        type="number"
+                        name="number_outpatient"
+                        min="0"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Emergency Visits
+                    </label>
+
+                    <input
+                        type="number"
+                        name="number_emergency"
+                        min="0"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Inpatient Visits
+                    </label>
+
+                    <input
+                        type="number"
+                        name="number_inpatient"
+                        min="0"
+                        value="0"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Number of Diagnoses
+                    </label>
+
+                    <input
+                        type="number"
+                        name="number_diagnoses"
+                        min="0"
+                        value="1"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DIAGNOSIS -->
+
+        <div class="card">
+
+            <div class="section-title">
+                06 · Diagnosis
+            </div>
+
+            <div class="grid">
+
+                <div class="field">
+
+                    <label>
+                        Primary Diagnosis Code
+                    </label>
+
+                    <input
+                        type="text"
+                        name="diag_1"
+                        placeholder="e.g. 428.0"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Secondary Diagnosis
+                    </label>
+
+                    <input
+                        type="text"
+                        name="diag_2"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>
+                        Third Diagnosis
+                    </label>
+
+                    <input
+                        type="text"
+                        name="diag_3"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <button
+            type="submit"
+            class="button"
+        >
+
+            ✓ Add Patient & Update Dashboard
+
+        </button>
+
+    </form>
+
+</div>
+
+
+<script>
+
+function setMode(mode) {
+
+    document.getElementById(
+        "data_mode"
+    ).value = mode;
+
+}
+
+</script>
+
+</body>
+
+</html>
