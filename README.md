@@ -1,23 +1,29 @@
+ <div align="center">
 
- <span style="color:#007ACC;">PROJECT P_025</span> <span style="color:#20B2AA;">•</span> <span style="color:#2E7D32;">BUSINESS ANALYTICS</span> <span style="color:#20B2AA;">•</span> <span style="color:#007ACC;">HEALTHCARE & PHARMA</span>
+  <!-- Animated SVG Header Banner -->
+  <img src="./assets/gemini-svg.svg" alt="Patient Health Outcome Predictor Banner" width="100%" />
 
+  <br/>
 
-<span style="color:#192D5A;">Patient Health Outcome</span> <span style="color:#00A896;">Predictor</span>
+  <!-- Matching Tagline -->
+  <h2>🩺 Mastering Clinical Outcome Analytics</h2>
+  <p><i>"Transforming EHR patterns into explainable, life-saving predictive care."</i></p>
 
-<!-- Modern Shields.io Badges with Gradients & Glow -->
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.9%20%7C%203.10-00f2fe?style=for-the-badge&logo=python&logoColor=black" alt="Python"/>
-  <img src="https://img.shields.io/badge/Machine%20Learning-scikit--learn-ff9a44?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn"/>
-  <img src="https://img.shields.io/badge/Explainability-SHAP%20XAI-8b5cf6?style=for-the-badge&logo=openai&logoColor=white" alt="SHAP"/>
-  <img src="https://img.shields.io/badge/Web%20App-Flask%20%2B%20Jinja-0ea5e9?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"/>
-  <img src="https://img.shields.io/badge/Visuals-Plotly%20Dynamic-10b981?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"/>
-  <img src="https://img.shields.io/badge/Compliance-HIPAA%20De--identified-14b8a6?style=for-the-badge&logo=shield&logoColor=white" alt="HIPAA"/>
-</p>
+  <!-- Color-Coded Metadata Badges (Matching reference style) -->
+  <p>
+    <img src="https://img.shields.io/badge/DOMAIN-HEALTHCARE%20%26%20PHARMA-007ACC?style=for-the-badge&logo=medicare&logoColor=white" />
+    <img src="https://img.shields.io/badge/PROJECT-P__025-00A896?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/TEAM-NEVER--MIND-028090?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/LEAD-NANDANI%20KUMARI-05668D?style=for-the-badge" />
+  </p>
 
-<!-- Live Pulse Indicator -->
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=3000&pause=1000&color=00F2FE&center=true&vCenter=true&width=580&lines=⚡+Scoring+30-Day+Patient+Readmission+Probabilities;🔍+Explaining+Predictions+with+SHAP+Feature+Values;📊+Live+Plotly+Dashboards+for+Hospital+Staff;🛡️+Privacy-First+Synthetic+%26+UCI+Clinical+Datasets" alt="Typing SVG" />
-</p>
+  <p>
+    <img src="https://img.shields.io/badge/Python-3.10+-102A45?style=flat-square&logo=python&logoColor=white" />
+    <img src="https://img.shields.io/badge/Framework-Flask-00A896?style=flat-square&logo=flask&logoColor=white" />
+    <img src="https://img.shields.io/badge/ML-scikit--learn-007ACC?style=flat-square&logo=scikit-learn&logoColor=white" />
+    <img src="https://img.shields.io/badge/Explainability-SHAP-02C39A?style=flat-square" />
+    <img src="https://img.shields.io/badge/Dashboards-Plotly-00E5BE?style=flat-square&logo=plotly&logoColor=black" />
+  </p>
 
 </div>
 
