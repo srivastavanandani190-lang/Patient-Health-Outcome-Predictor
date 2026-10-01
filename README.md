@@ -1,105 +1,8 @@
-<div align="center">
 
-<!-- Animated Header Banner SVG -->
-<svg viewBox="0 0 1000 280" width="100%" height="280" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#091e3a"/>
-      <stop offset="50%" stop-color="#0f3460"/>
-      <stop offset="100%" stop-color="#16213e"/>
-    </linearGradient>
-    <linearGradient id="tealCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f2fe"/>
-      <stop offset="100%" stop-color="#4facfe"/>
-    </linearGradient>
-    <linearGradient id="accentPulse" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38ef7d"/>
-      <stop offset="100%" stop-color="#11998e"/>
-    </linearGradient>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-  </defs>
+ <span style="color:#007ACC;">PROJECT P_025</span> <span style="color:#20B2AA;">•</span> <span style="color:#2E7D32;">BUSINESS ANALYTICS</span> <span style="color:#20B2AA;">•</span> <span style="color:#007ACC;">HEALTHCARE & PHARMA</span>
 
-  <style>
-    @keyframes pulseLine {
-      0% { stroke-dashoffset: 800; opacity: 0.3; }
-      50% { opacity: 1; }
-      100% { stroke-dashoffset: 0; opacity: 0.3; }
-    }
-    @keyframes beat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.08); }
-    }
-    @keyframes floatOrb {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-    }
-    .ecg-line {
-      stroke: #00f2fe;
-      stroke-width: 2.5;
-      fill: none;
-      stroke-dasharray: 800;
-      animation: pulseLine 4.5s ease-in-out infinite;
-      filter: drop-shadow(0 0 6px #00f2fe);
-    }
-    .pulse-heart {
-      transform-origin: 500px 52px;
-      animation: beat 2s infinite ease-in-out;
-    }
-    .floating-badge {
-      animation: floatOrb 3s ease-in-out infinite;
-    }
-  </style>
 
-  <!-- Background Base with subtle border -->
-  <rect width="1000" height="280" rx="16" fill="url(#bgGrad)"/>
-  <rect x="1.5" y="1.5" width="997" height="277" rx="15" fill="none" stroke="rgba(0, 242, 254, 0.25)" stroke-width="2"/>
-
-  <!-- Subtle Background Grid Overlay -->
-  <path d="M 0,70 L 1000,70 M 0,140 L 1000,140 M 0,210 L 1000,210 M 200,0 L 200,280 M 400,0 L 400,280 M 600,0 L 600,280 M 800,0 L 800,280" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-
-  <!-- Animated ECG Vitals Rhythm -->
-  <path class="ecg-line" d="M 0,215 L 140,215 L 160,205 L 175,225 L 195,215 L 230,215 L 245,185 L 260,250 L 280,140 L 300,240 L 315,200 L 330,215 L 460,215 L 480,205 L 495,225 L 515,215 L 560,215 L 575,175 L 590,255 L 610,135 L 630,245 L 645,195 L 660,215 L 820,215 L 840,205 L 855,225 L 875,215 L 910,215 L 925,180 L 940,245 L 960,150 L 980,230 L 1000,215" />
-
-  <!-- Track Pill -->
-  <g class="floating-badge">
-    <rect x="270" y="24" width="460" height="30" rx="15" fill="rgba(0, 242, 254, 0.12)" stroke="#00f2fe" stroke-width="1"/>
-    <text x="500" y="44" fill="#00f2fe" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">
-      PROJECT P_025  •  BUSINESS ANALYTICS  •  HEALTHCARE &amp; PHARMA
-    </text>
-  </g>
-
-  <!-- Big Title -->
-  <text x="500" y="108" fill="#ffffff" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="0.5" text-anchor="middle" filter="url(#glow)">
-    Patient Health Outcome Predictor
-  </text>
-
-  <!-- Subtitle -->
-  <text x="500" y="142" fill="#93c5fd" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" text-anchor="middle">
-    Predictive Clinical Intelligence &amp; 30-Day Readmission Risk Stratification
-  </text>
-
-  <!-- Animated Bottom Badges inside SVG -->
-  <g transform="translate(230, 160)">
-    <!-- Team Badge -->
-    <rect x="0" y="0" width="250" height="42" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
-    <circle cx="22" cy="21" r="10" fill="#0284c7"/>
-    <text x="22" y="25" fill="#fff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" text-anchor="middle">👥</text>
-    <text x="44" y="18" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="700">TEAM NAME</text>
-    <text x="44" y="33" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="800">Never-Mind</text>
-
-    <!-- Member Badge -->
-    <rect x="280" y="0" width="260" height="42" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
-    <circle cx="302" cy="21" r="10" fill="#10b981"/>
-    <text x="302" y="25" fill="#fff" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="900" text-anchor="middle">👩‍💻</text>
-    <text x="324" y="18" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="700">LEAD ANALYST</text>
-    <text x="324" y="33" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="800">Nandani Kumari</text>
-  </g>
-</svg>
-
-<br/>
+<span style="color:#192D5A;">Patient Health Outcome</span> <span style="color:#00A896;">Predictor</span>
 
 <!-- Modern Shields.io Badges with Gradients & Glow -->
 <p align="center">
@@ -329,31 +232,6 @@ python app.py
 
 ---
 
-## 📁 Repository Organization
-
-```text
-├── data/
-│   ├── raw/                       # De-identified UCI Diabetes 130-US Hospitals dataset
-│   └── processed/                 # Feature engineered & imputed matrices
-├── models/
-│   ├── model.joblib               # Serialized scikit-learn classification pipeline
-│   └── preprocessor.joblib        # One-hot encoders & standard scalers
-├── static/
-│   ├── css/                       # Presentation-matched styling & color palettes
-│   └── js/                        # Form validations and async AJAX handlers
-├── templates/
-│   ├── index.html                 # Clinical Intelligence Dashboard with KPI cards
-│   ├── predict.html               # Add Patient Form & dynamic risk calculator
-│   └── results.html               # SHAP feature importance plot & recommendations
-├── app.py                         # Flask server routes & application entry point
-├── pipeline.py                    # Training scripts with SMOTE class balancing
-├── explainability.py              # SHAP summary & force plot generation logic
-├── requirements.txt               # Pinned Python package dependencies
-└── README.md                      # Animated project presentation & architecture
-```
-
----
-
 ## 🛡️ Privacy, Ethics & Regulatory Compliance
 
 * **HIPAA Safe Harbor:** Built strictly on de-identified and synthetic benchmark cohorts (UCI repository). No personally identifiable protected health information (PHI) is processed or stored.
@@ -361,18 +239,6 @@ python app.py
 
 ---
 
-<div align="center">
+ 
 
-### 🤝 Project Information
-
-**Track:** Project P_025 • Business Analytics • Healthcare & Pharma  
-**Team Name:** Never-Mind  
-**Lead Developer:** [Nandani Kumari](https://github.com/srivastavanandani190-lang)
-
-<br/>
-
-<a href="#-patient-health-outcome-predictor-p_025">
-  <img src="https://img.shields.io/badge/Back%20To%20Top-00f2fe?style=for-the-badge&logo=quicktime&logoColor=black" alt="Back To Top"/>
-</a>
-
-</div>
+ 
