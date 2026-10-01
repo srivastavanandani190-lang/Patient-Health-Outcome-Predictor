@@ -84,6 +84,24 @@ Visualize population trends, diagnosis patterns and outcomes.
 
 ---
 
+
+## 🛠️ Technology Stack Breakdown
+
+<div align="center">
+
+| Module | Technologies | Icon / Badge | Role in Project |
+| :--- | :--- | :---: | :--- |
+| **Backend Core** | Python 3.9+, Flask, Gunicorn | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) | Lightweight REST API routing and prediction endpoints |
+| **Data Engine** | Pandas, NumPy | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) | Vectorized preprocessing, null imputation, and data cleaning |
+| **ML Framework** | scikit-learn, joblib | ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) | Pipeline architecture, hyperparameter tuning & serialization |
+| **Class Balancing** | imbalanced-learn (SMOTE) | ![SMOTE](https://img.shields.io/badge/SMOTE-Balanced-brightgreen?style=flat-square) | Resolves 30-day readmission label skewness |
+| **Explainable AI** | SHAP (SHapley Additive exPlanations) | ![SHAP](https://img.shields.io/badge/SHAP-Explainable%20AI-9cf?style=flat-square) | Localized feature contribution attribution for clinicians |
+| **Visual Analytics** | Plotly Express, HTML5, CSS3 | ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white) | Interactive donut charts, gender splits, and risk gauges |
+
+</div>
+
+---
+
 ## 🎨 System Architecture (HLD & LLD)
 
 Here is the full system architecture visual, colored with our presentation palette (**Teal, Sky Blue, Violet, Amber, and Emerald**).
@@ -194,22 +212,6 @@ flowchart TD
 
 ---
 
-## 🛠️ Technology Stack Breakdown
-
-<div align="center">
-
-| Module | Technologies | Icon / Badge | Role in Project |
-| :--- | :--- | :---: | :--- |
-| **Backend Core** | Python 3.9+, Flask, Gunicorn | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) | Lightweight REST API routing and prediction endpoints |
-| **Data Engine** | Pandas, NumPy | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) | Vectorized preprocessing, null imputation, and data cleaning |
-| **ML Framework** | scikit-learn, joblib | ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) | Pipeline architecture, hyperparameter tuning & serialization |
-| **Class Balancing** | imbalanced-learn (SMOTE) | ![SMOTE](https://img.shields.io/badge/SMOTE-Balanced-brightgreen?style=flat-square) | Resolves 30-day readmission label skewness |
-| **Explainable AI** | SHAP (SHapley Additive exPlanations) | ![SHAP](https://img.shields.io/badge/SHAP-Explainable%20AI-9cf?style=flat-square) | Localized feature contribution attribution for clinicians |
-| **Visual Analytics** | Plotly Express, HTML5, CSS3 | ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white) | Interactive donut charts, gender splits, and risk gauges |
-
-</div>
-
----
 
 ## ⚡ Quick Start & Setup
 
